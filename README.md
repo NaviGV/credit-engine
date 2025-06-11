@@ -45,9 +45,10 @@ credit-engine/
 ##  How to Run Locally
 
 ### 1. Clone the Repository
-
+```
 git clone https://github.com/NaviGV/credit-engine.git
 cd credit-engine
+```
 
 ### 2. Install Dependencies
 npm install
