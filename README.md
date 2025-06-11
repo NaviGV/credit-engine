@@ -26,6 +26,7 @@ A lightweight Node.js API that issues and tracks **"thank-you" credits** for use
 
 ## 📂 Folder Structure
 
+```
 credit-engine/
 ├── src/
 │ ├── index.js          # Server bootstrap
@@ -37,7 +38,7 @@ credit-engine/
 ├── .gitignore
 ├── package.json
 └── README.md
-
+```
 
 
 
@@ -66,15 +67,18 @@ npm start
 Enrolls a new user to the system
 
 **📤 Send This in Request Body:**
+```
 {
   "userId": "user123"
 }
-
+```
 
 **✅ Sample Success Response:**
+```
 {
   "message": "User user123 enrolled"
 }
+```
 
 
 ### 2.Credit a User
@@ -83,16 +87,20 @@ Enrolls a new user to the system
 Credits a user for an interaction.
 
 **📤 Send This in Request Body:**
+```
 {
   "userId": "user123",
   "actionType": "techModule"
 }
+```
 
 **✅ Sample Success Response:**
+```
 {
   "message": "Credited 10 points to user123",
   "total": 10
 }
+```
 
 ### 3.Get User Credits
 
@@ -100,6 +108,7 @@ Credits a user for an interaction.
 Fetches total credits and all actions of a user.
 
 **✅ Sample Response:**
+```
 {
   "credits": [
     {
@@ -109,10 +118,12 @@ Fetches total credits and all actions of a user.
   ],
   "total": 10
 }
+```
 
 ## Action Types
 Defined in `src/models/actionTypes.js`:
 
+```js
 const ACTION_TYPES = Object.freeze({
   TECH_MODULE: 'techModule',
   SOCIAL_POST: 'socialPost',
@@ -123,6 +134,7 @@ const ACTION_TYPES = Object.freeze({
 });
 
 module.exports = ACTION_TYPES;
+```
 
 ## Testing Guide (Postman)
 Use Postman to test the following:
