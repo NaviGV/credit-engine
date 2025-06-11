@@ -1,5 +1,10 @@
 # Credit Engine API
 
+## 🌐 Deployed URL
+
+This API is live at:  
+**[https://credit-engine-q5am.onrender.com](https://credit-engine-q5am.onrender.com)**
+
 A lightweight Node.js API that issues and tracks **"thank-you" credits** for user interactions across an ecosystem — including tech modules, social posts, referrals, spend multipliers, and coffee-wall actions.
 
 
